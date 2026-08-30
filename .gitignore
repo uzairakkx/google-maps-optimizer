@@ -1,0 +1,47 @@
+# Environment and secrets
+.env
+.env.*
+!.env.example
+attached_assets/
+
+# Replit workspace metadata
+.agents/
+.cache/
+.local/
+.config/
+
+*.pem
+*.key
+
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.venv/
+venv/
+*.egg-info/
+
+# Node
+node_modules/
+.next/
+out/
+coverage/
+*.tsbuildinfo
+playwright-report/
+test-results/
+
+# IDE and OS
+.DS_Store
+.idea/
+.vscode/
+
+# Local runtime data
+postgres-data/
+redis-data/
+*.log
+
+# Build artifacts
+dist/
+build/
