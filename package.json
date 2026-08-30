@@ -1,0 +1,15 @@
+{
+  "name": "google-maps-optimizer",
+  "private": true,
+  "packageManager": "pnpm@10.26.1",
+  "scripts": {
+    "web:dev": "pnpm --dir apps/web dev",
+    "web:check": "pnpm --dir apps/web check",
+    "web:build": "pnpm --dir apps/web build",
+    "web:test": "pnpm --dir apps/web test",
+    "api:test": "cd apps/api && pytest",
+    "api:lint": "cd apps/api && ruff check .",
+    "api:typecheck": "cd apps/api && mypy app tests",
+    "check": "pnpm api:lint && pnpm api:typecheck && pnpm api:test && pnpm web:check && pnpm web:build"
+  }
+}
